@@ -146,6 +146,7 @@ body{
     content: '';
     display: flex;
     width: 110px;
+    transform:rotate(180deg);
     height: 90px;
     background: url("quote.svg") no-repeat center center;
     background-size: auto;
@@ -156,7 +157,7 @@ body{
     content: '';
     display: flex;
     width: 110px;
-    rotate: 180deg;
+   
     height: 90px;
     background: url("quote.svg") no-repeat center center;
     background-size: auto;

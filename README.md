@@ -1,8 +1,7 @@
-# The Cider Project
+# <img src="https://raw.githubusercontent.com/SlowDudeCodes/Cider-Project/748fc9e8abf7d436a468ffd4f6a40c0ba7f1e4ac/src/iconb.svg" alt="Cider Logo" width="50"> Cider Project 
 
-![Cider Logo](https://via.placeholder.com/150)  <!-- Replace with your logo -->
 
-Cider is a operating system based on Ubuntu(but you don't ever use Ubuntu). Let me explain. Cider is a Ubutnu Core based OS but built to virtulaize any OS. This opens up the opertunity to run MacOS on for example a Raspberry Pi(or just any computer for that matter).  
+Cider is a operating system based on Ubuntu(but you don't ever use Ubuntu). Let me explain. Cider is a Ubutnu based OS but built to virtulaize any OS. This opens up the oppertunity to run MacOS on for example a Raspberry Pi(or just any computer for that matter). This idea struck me when I unenrolled a Chromebook and realised that nothing but linux can run on such a machine. 
 
 
 ---
@@ -21,14 +20,15 @@ Cider is a operating system based on Ubuntu(but you don't ever use Ubuntu). Let 
 ## Installation
 
 ### Prerequisites
-- A computer (Raspberry Pi, PC, etc.)
-- Cider image (you can download it from our release section)
-- A USB drive or SD card (for installation)
+- A computer (Raspberry Pi, PC, Mac etc.)
+- A victum computer (Raspberry Pi, PC, Mac, Chromebook etc.)
+- Cider builder (or you could build it yourself, or use one prebuilt)
+- A USB drive or SD card 8 GB + ISO requierd size (for installation)
 
 ### Step-by-step guide:
-
+*Important if you are building it yourself read [Building Cider](#building) also if you are planing to use a prebuilt head to [Prebuilds](https://github.com/slowdudecodes/). Prebuilds is for computers like Raspberry Pi.*
 1. **Download the latest release**:
-   Head to the [Releases page](https://github.com/your-username/cider-os/releases) to download the Cider image.
+   Head to the [Releases page](https://github.com/slowdudecodes/cider-os/releases) to download the Cider Builder.
 
 2. **Write the image to your device**:
    You can use tools like [Rufus](https://rufus.ie/) or [Balena Etcher](https://www.balena.io/etcher/) to flash the Cider image onto a USB drive or SD card.
@@ -63,7 +63,7 @@ Simply follow these steps:
 - **Multi-OS Virtualization**: Run any OS, including macOS, Windows, Linux, and more.
 - **Lightweight**: Optimized for both high-end and low-resource devices, including Raspberry Pi and older PCs.
 - **Customizable**: Full control over system settings, virtual machine configurations, and hardware resources.
-- **Simple Interface**: Easy-to-use graphical interface for managing virtual machines and system settings.
+- **Simple Interface**: Easy-to-use graphical interface for managing virtual machine and system settings.
 
 ---
 
@@ -105,9 +105,3 @@ For any questions, feedback, or support:
 
 ---
 
-## Icons
-
-Here are some of the icons we use:
-
-- ![Icon 1](https://img.icons8.com/ios/50/000000/github.png) GitHub
-- ![Icon 2](https://img.icons8.com/ios/50/000000/mail.png) Email
