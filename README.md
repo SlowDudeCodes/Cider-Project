@@ -90,8 +90,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Here are some screenshots of Cider in action:
 
-![Cider Screenshot 1](https://via.placeholder.com/600x400)  <!-- Replace with actual screenshot -->
-![Cider Screenshot 2](https://via.placeholder.com/600x400)  <!-- Replace with actual screenshot -->
+![Cider Screenshot 1](https://picsum.photos/600/400)  <!-- Replace with actual screenshot -->
+![Cider Screenshot 1](https://picsum.photos/600/400) <!-- Replace with actual screenshot -->
 
 ---
 
