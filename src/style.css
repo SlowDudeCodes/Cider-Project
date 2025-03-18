@@ -1,41 +1,52 @@
+:root {
+    --background: rgb(255, 255, 255);
+    --text-color: rgb(0, 0, 0);
+}
+
+
 @font-face {
     font-family: Verdana-Pro;
     src: url("VerdanaPro-Black.ttf");
 }
-*{
+
+
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
+
     min-height: 100vh;
     width: 100%;
 }
+
 .navbar {
-    
+
     margin: 0;
     padding: 0;
     position: fixed;
     z-index: 5;
-    left: 2.5%;
-    width: 95%;
+    width: 100%;
     display: flex;
     height: 70px;
+    background-color: var(--background);
     overflow: hidden;
     border: rgba(117, 117, 117, 0.295) solid 1px;
     border-radius: 0 0 10px 10px;
 }
-.navbar-start{
+
+.navbar-start {
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     margin: 0;
     padding: 0;
-   
+
 }
 
-.navbar-end{
+.navbar-end {
     width: 50%;
     height: 100%;
     display: flex;
@@ -44,137 +55,176 @@ body{
 
 }
 
-.item-start{
+.item-start {
     padding-left: 20px;
     font-size: 1.5rem;
-    font-family: Verdana-Pro ,Verdana, sans-serif;
+    font-family: Verdana-Pro, Verdana, sans-serif;
     display: flex;
-    color: black;
+    color: var(--text-color);
     text-align: center;
     height: 100%;
-    
-    
+
+
     width: 30vw;
     align-items: center;
-  
+    transition: .2s;
+
+
     text-decoration: none;
 }
+
 .navbar-item {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
-    color: black;
+    color: var(--text-color);
     text-align: center;
     height: 100%;
     margin: 0 25px 0 25px;
     font-weight: 400;
-    min-width: 70px;
+    min-width: 100px;
     align-items: center;
     place-content: center;
     text-decoration: none;
+    transition: .2s;
+    line-height: 2em;
 }
 
-.navbar-blur{
-    height: 70px;
-    width: 100%;
-    position: fixed;
-    z-index: 4;
-    backdrop-filter: blur(.5rem);
-    background-color: transparent;
-}
+
+
 .item-start>img {
     margin-right: 5px;
     width: 1.5em;
 }
-.navbar-item:hover, .item-start:hover {
+
+.navbar-item:hover,
+.item-start:hover {
+
+    text-decoration:underline black 2px;
     color: #ffd700;
 }
 
 
-#home-page{
+#home-page {
     width: 100%;
     background-color: gold;
-    height: 100vh;
+    min-height: 100vh;
 }
-.home-landing{
-   
+
+.home-landing {
+    color: var(--text-color);
     height: 40vh;
-    background-color: white;
+    background-color: var(--background);
     display: flex;
     padding: 10px;
 }
-.home-landing>h1{
+
+.home-landing>h1 {
     font-size: 4rem;
-    font-family: Verdana-Pro ,Verdana, sans-serif;
+    font-family: Verdana-Pro, Verdana, sans-serif;
     height: 40vh;
     width: 50%;
     display: flex;
     align-items: end;
     place-content: start;
-    
+
 
 }
-.home-landing>div{
-   
+
+.home-landing>div {
+
     height: 40vh;
     width: 50%;
     display: flex;
     align-items: end;
     place-content: center;
-    
+
 
 }
-.home-landing>div>img{
+
+.home-landing>div>img {
     height: calc(100vw / 2 / 3);
     width: calc(100vw / 2 / 3);
-   
+
 }
-.home-body{
+
+.home-body {
+    gap: 100px;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.home-body>p{
+
+.home-body>p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
+    font-size: 1.3em;
     line-height: 1.5;
-    width: 80%;
+    width: 60%;
 }
-.body-quote{
+
+.body-quote {
     width: 100%;
     height: 40vh;
     display: flex;
     align-items: center;
     place-content: center;
 }
+
 .quote {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
     font-size: 3rem;
-    line-height: 1.1 ;
-    letter-spacing: -0.8px ;
-    
+    line-height: 1.1;
+    letter-spacing: -0.8px;
+
 }
+
 .quote::before {
     content: '';
     display: flex;
     width: 110px;
-    transform:rotate(180deg);
+    transform: rotate(180deg);
     height: 90px;
     background: url("quote.svg") no-repeat center center;
     background-size: auto;
-    top:calc(-15px - 90px);
+    top: calc(-15px - 90px);
     position: absolute;
 }
+
 .quote::after {
     content: '';
     display: flex;
     width: 110px;
-   
+
     height: 90px;
     background: url("quote.svg") no-repeat center center;
     background-size: auto;
-    top:calc( 60px);
+    top: calc(60px);
     position: absolute;
     right: 0;
+}
+
+.body-tape {
+    font-size: 3em;
+    width: 100vw;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    background-image: linear-gradient(90deg, transparent, transparent, transparent), repeating-linear-gradient(45deg, black, black 35px, gold 35px, gold 70px);
+    background-size:   auto;
+}
+
+.body-tape span {
+    
+    cursor: default;
+    color: white;
+    display: block;
+    background-color: black;
+    padding: 10px;
+    font-family:Verdana,sans-serif;
+    border: gold solid 5px;
+    font-weight: 800;
+    text-align: center;
+    white-space: nowrap;
 }

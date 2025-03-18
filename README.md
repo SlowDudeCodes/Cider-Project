@@ -3,6 +3,7 @@
 
 Cider is a operating system based on Ubuntu(but you don't ever use Ubuntu). Let me explain. Cider is a Ubutnu based OS but built to virtulaize any OS. This opens up the oppertunity to run MacOS on for example a Raspberry Pi(or just any computer for that matter). This idea struck me when I unenrolled a Chromebook and realised that nothing but linux can run on such a machine. 
 
+**IMPORTANT RASPBERY PI AND OTHER ARM BASED SYSTEM ARE CURRENTLY UNDER DEVELOPMENT**
 
 ---
 
